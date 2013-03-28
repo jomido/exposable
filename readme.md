@@ -3,7 +3,7 @@
 
 ## Why'd I Make This?
 
-[[Skip to bottom.]](#why)
+[[Skip to bottom.]](#whyd-i-make-this-1)
 
 ## As a Mixin
 
