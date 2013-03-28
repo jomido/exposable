@@ -100,9 +100,9 @@ When the **Exposable** class is used to manage context, or as a wrapper, then th
 
 I get carried away sometimes.
 
-### Mutliple Attribute Access
+### Multiple Attribute Access
 
-You can get and set mutliple attributes simultaneously by sending iterables (like a list) to the *get* mixin method, and mappables (like a dict) to the *set* mixin method. Here's a class:
+You can get and set multiple attributes simultaneously by sending iterables (like a list) to the *get* mixin method, and mappables (like a dict) to the *set* mixin method. Here's a class:
 
     class App(Exposable):
 
