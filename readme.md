@@ -226,7 +226,7 @@ Sometimes regexes are just a pain. If you're using the **Exposable** class as a 
 ## Why'd I Make This?
 [[top]](#top)
 
-I'm writing/have written (what amounts to) an "application server" in Python & Javascript. User apps have two interrelated parts: a front-end js part, and potentially a back-end python part (if server-side logic is required). Sometimes I'd like the js part of the app to read/write attributes of the python part. It is tedious to have to check selectively against attribute access:
+I'm writing/have written (what amounts to) an "application server" in Python & Javascript. User apps have two interrelated parts: a front-end JS part, and potentially a back-end Python part (if server-side logic is required). Sometimes I'd like the JS part of the app to read/write attributes of the Python part. It is tedious to have to check selectively against attribute access:
 
     // js
 
@@ -268,7 +268,7 @@ I'm writing/have written (what amounts to) an "application server" in Python & J
 
 This works fine and all, but the definition of the SomePythonAppThatCounterpartsTheJsAppAbove (from hereon called App) class is fluid, and as I add/remove/alter attributes I also need to remember to update that 'allowed' list inside the on_get method.
 
-With the **Exposable** class I can simply decorate or undecorate the attributes as I add them, remove them, rename them, or alter what they mean.
+With the **Exposable** class I can simply decorate or un-decorate the attributes as I add them, remove them, rename them, or alter what they mean.
 
 However, I also realized that sometimes the permissions on server-side app attributes were user-dependant. An admin required access to some parts of an app that a regular user would never have access to. Ideally I wanted to grab a "policy" from a user regarding an app in question, and then apply that policy to the app whenever the user requested access to attributes. So the **Exposable** class mutated into a wrapper, and then (because it was so simple!) a context manager.
 
