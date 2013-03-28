@@ -71,7 +71,7 @@ Sometimes you don't want to mess with your classes. You don't want to 'mix in' a
 
 The policy is a simple dictionary of sets. The 'exposed' set exposes attributes with both read and write access. The 'gettable' set exposes attributes with read access. The 'settable' set exposes attributes with write access.
 
-A policy may be defined elsewhere (on some user object, or what-have-you). You can apply them to apps on a case-by-case basis with **Exposable** context manager.
+A policy may be defined elsewhere (on some user object, or what-have-you). You can apply them to apps on a case-by-case basis with the **Exposable** context manager.
 
 ## As a Wrapper
 
