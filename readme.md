@@ -66,7 +66,7 @@ Sometimes you don't want to mess with your classes. You don't want to 'mix in' a
 
     with Exposable(app, policy) as exposee:
         exposee.get('a')  # 1
-        exposee.get('b')  # 1
+        exposee.get('b')  # 2
         exposee.get('c')  # None
 
 The policy is a simple dictionary of sets. The 'exposed' set exposes attributes with both read and write access. The 'gettable' set exposes attributes with read access. The 'settable' set exposes attributes with write access.
