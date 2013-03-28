@@ -134,7 +134,7 @@ You can get and set multiple attributes simultaneously by sending iterables (lik
             ...
             return self._c
 
-Getting with an iterable (aka list, aka array for javascripty's):
+Getting with an iterable (aka list, aka array for JavaScripters):
 
     app.get(['a', 'b', 'c'])
 
@@ -146,7 +146,7 @@ will return:
         'c': None
     }
 
-Setting with a dictionary (aka hashmap, aka object literal for javascripty's):
+Setting with a dictionary (aka hashmap, aka object literal for JavaScripters):
 
     app.set({
         'a': 10,
@@ -226,7 +226,7 @@ Sometimes regexes are just a pain. If you're using the **Exposable** class as a 
 ## Why'd I Make This?
 [[top]](#top)
 
-I'm writing/have written (what amounts to) an "application server" in Python & Javascript. User apps have two interrelated parts: a front-end JS part, and potentially a back-end Python part (if server-side logic is required). Sometimes I'd like the JS part of the app to read/write attributes of the Python part. It is tedious to have to check selectively against attribute access:
+I'm writing/have written (what amounts to) an "application server" in Python & JavaScript. User apps have two interrelated parts: a front-end JS part, and potentially a back-end Python part (if server-side logic is required). Sometimes I'd like the JS part of the app to read/write attributes of the Python part. It is tedious to have to check selectively against attribute access:
 
     // js
 
