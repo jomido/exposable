@@ -231,7 +231,7 @@ I'm writing/have written (what amounts to) an "application server" in Python & J
     // js
 
     promise = me.getAttr(["a", "b"]); // 'me' is a js app of some kind
-    promise.done(function (response) {
+    promise.then(function (response) {
         console.log(response.a);  // prints '1'
         console.log(response.b);  // prints 'null'; JSON converts my Python None value into a null
     });
