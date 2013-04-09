@@ -44,7 +44,7 @@ class Exposable(object):
 
     def get(self, attrs):
 
-        if (isinstance(attrs, types.StringType) or
+        if (isinstance(attrs, basestring) or
            not isinstance(attrs, collections.Iterable)):
             attrs = [attrs]
 
@@ -82,12 +82,12 @@ class Exposable(object):
 
     def set(self, attrs, value=None):
 
-        if isinstance(attrs, types.StringType):
+        if isinstance(attrs, basestring):
             attrs = {attrs: value}
 
         if not isinstance(attrs, collections.Mapping):
             raise TypeError(
-                "The attr or attrs passed to set must by a types.StringType "
+                "The attr or attrs passed to set must by a basestring "
                 "type or a collections.Mapping."
             )
         try:
